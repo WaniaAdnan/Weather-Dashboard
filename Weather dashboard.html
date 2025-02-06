@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div id="welcome-screen">
+        <h1>🌍 Welcome to Weather Dashboard</h1>
+        <button id="start-btn">Get Started</button>
+    </div>
+
+    <div id="dashboard-container" class="hidden">
+        <h1>🌍 Weather Dashboard</h1>
+
+        <div class="search-box">
+            <input type="text" id="city" placeholder="Enter city name">
+            <button onclick="getWeather()">Search</button>
+        </div>
+
+        <div class="dashboard">
+            <div class="weather-section">
+                <h2 id="city-name"></h2>
+                <p id="date-time"></p>
+                <img id="weather-icon" src="" alt=" ">
+                <p id="temp"></p>
+                <p id="weather-desc"></p>
+
+        <div class="forecast">
+                <h3>5-Day Forecast</h3>
+                <div class="forecast-container" id="forecast-container"></div>
+                </div>
+            </div>
+
+        <div class="highlights">
+                <h3>Today's Highlights</h3>
+                <div class="highlight-grid">
+                    <div class="highlight-box"><strong>Feels Like:</strong> <span id="feels-like"></span>°C</div>
+                    <div class="highlight-box"><strong>Clouds:</strong> <span id="clouds"></span>%</div>
+                    <div class="highlight-box"><strong>Sunrise:</strong> <span id="sunrise"></span></div>
+                    <div class="highlight-box"><strong>Sunset:</strong> <span id="sunset"></span></div>
+                    <div class="highlight-box"><strong>Humidity:</strong> <span id="humidity"></span>%</div>
+                    <div class="highlight-box"><strong>Pressure:</strong> <span id="pressure"></span> hPa</div>
+                    <div class="highlight-box"><strong>Visibility:</strong> <span id="visibility"></span> km</div>
+                    <div class="highlight-box"><strong>Wind Speed:</strong> <span id="wind-speed"></span> m/s</div>
+                    <div class="highlight-box"><strong>Precipitation:</strong> <span id="precipitation"></span> mm</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

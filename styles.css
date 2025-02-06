@@ -1,0 +1,114 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background: #121212;
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+}
+
+#welcome-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #1c1c1c;
+}
+
+#welcome-screen h1 {
+    font-size: 2rem;
+    color: #00aaff;
+}
+
+#welcome-screen button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background: #00aaff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+#dashboard-container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    background: #1c1c1c;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+.search-box input {
+    padding: 10px;
+    width: 70%;
+    border: none;
+    border-radius: 5px;
+    background: #2a2a2a;
+    color: #fff;
+}
+
+.search-box button {
+    padding: 10px;
+    background: #00aaff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dashboard {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.weather-section {
+    width: 55%;
+    background: #252525;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.weather-section img {
+    width: 80px;
+}
+.highlights {
+    width: 40%;
+    background: #252525;
+    padding: 15px;
+    border-radius: 10px;
+}
+.highlight-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.highlight-box {
+    background: #1e1e1e;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: left;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+.forecast-container {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 10px 0;
+}
+
+.forecast-item {
+    background: #1e1e1e;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    min-width: 120px;
+}
